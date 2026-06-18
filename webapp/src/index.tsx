@@ -156,31 +156,6 @@ const ERPEmbed = () => {
             <style>
                 {"@keyframes erp-spin { to { transform: rotate(360deg); } }"}
             </style>
-            <header style={styles.header}>
-                <div style={styles.titleGroup}>
-                    <h1 style={styles.title}>Translate</h1>
-                </div>
-                <div style={styles.actions}>
-                    <button
-                        type="button"
-                        style={styles.button}
-                        title="Tải lại ERP"
-                        aria-label="Tải lại ERP"
-                        onClick={refresh}
-                    >
-                        ↻
-                    </button>
-                    <button
-                        type="button"
-                        style={styles.button}
-                        title="Mở ERP trong tab mới"
-                        aria-label="Mở ERP trong tab mới"
-                        onClick={openInNewTab}
-                    >
-                        ↗
-                    </button>
-                </div>
-            </header>
             <div style={styles.content}>
                 <iframe
                     key={loadKey}
